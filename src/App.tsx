@@ -1,10 +1,12 @@
-import { HeaderTitle } from "./components/HeaderTitle"
+// import { Container } from "./components/container/Container"
+import { Header } from "./components/Header/Header"
+// import { HeaderTitle } from "./components/Header/HeaderTitle"
 
 function App() {
 
   return (
     <>
-      <HeaderTitle />
+      <Header />
     </>
   )
 }
