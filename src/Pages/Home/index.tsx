@@ -3,6 +3,7 @@ import { Button } from "../../components/Button/Button"
 import { Header } from "../../components/Header/Header"
 import { Title } from "../../components/Title/Title"
 import { Container } from "../../components/container/Container"
+import { Card } from "../../components/Card/Card"
 
 const genderBooks = [
   'Ação',
@@ -39,10 +40,15 @@ export function Home() {
           ))}
         </div>
 
-        <div className="pt-7">
+        <div className="py-7">
           <p className="text-evergreen font-semibold text-2xl">Sobre o que você gostaria de receber uma recomendação de livro ? </p>
           <input placeholder="Eu gostaria de ler ..." type="text" className="outline-none border shadow-lg border-gray-200 rounded-lg w-full p-3 mt-3" />
         </div>
+        <div className="mb-8">
+          <Title title='Livros recomendados' />
+        </div>
+
+        <Card />
 
       </Container>
     </>
