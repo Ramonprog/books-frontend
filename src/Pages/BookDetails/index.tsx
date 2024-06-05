@@ -1,7 +1,11 @@
+// import { useParams } from "react-router-dom";
+import { Card } from "../../components/Card/Card";
 import { HeaderTitle } from "../../components/Header/HeaderTitle";
+import { Title } from "../../components/Title/Title";
 import { Container } from "../../components/container/Container";
 
 export function BookDetails() {
+  // const { id } = useParams()
   return (
     <Container>
       <HeaderTitle />
@@ -12,6 +16,15 @@ export function BookDetails() {
           <p className="text-gray-500 mt-6 text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti voluptate sunt nemo ullam nulla dicta ipsa, quia aliquam facilis suscipit enim sequi? Iure molestias possimus vero distinctio perferendis! Ea, eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, repellendus! Ullam quisquam placeat odio, recusandae unde earum quaerat quibusdam maxime aspernatur labore totam impedit, tempora natus, molestias expedita neque ea. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab voluptates iusto porro maiores esse alias. Quod illo quo quia voluptatum praesentium perspiciatis sed ipsa mollitia, assumenda facere! Nobis, fugiat officia?</p>
         </div>
         <img className="w-full rounded-lg" src="https://photos.enjoei.com.br/livro-codigo-limpo-habilidades-praticas-do-agile-software-edicao-revisada/1200xN/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy8yODE0NDM0MC8wYjY5ZWZkZDM1NzlmMDc5Y2E0MzM5NDI3OGE0ZjhlYS5qcGc" alt="capa do livro" />
+      </div>
+      <div className="">
+        <Title title="Recomendações com base nesse livro" className="my-6" />
+        <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
       </div>
     </Container>
   )
