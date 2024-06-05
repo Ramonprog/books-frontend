@@ -1,4 +1,5 @@
 import { Button } from "../Button/Button";
+import { Tag } from "../Tag/Tag";
 
 export function Card() {
   return (
@@ -7,7 +8,7 @@ export function Card() {
       <div className="col-span-2">
         <p className="font-bold text-xl text-evergreen">Codigo Limpo</p>
         <p className="font-light text-lg text-gray-500">Autor</p>
-        <p className="rounded-full bg-green-100 bg-opacity-50 text-evergreen text-center w-fit px-6 py-1">Tag</p>
+        <Tag title="Ação" />
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos ad dolorem voluptatem rem ratione, culpa accusamus quos </p>
         <Button variant="light" title="Ver mais!" />
       </div>
