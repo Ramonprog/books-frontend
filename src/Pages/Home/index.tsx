@@ -12,8 +12,7 @@ const genderBooks = [
   'Terror',
   'Fantasia',
   'Drama',
-  'Suspense',
-  'Autoajuda'
+
 ]
 
 export function Home() {
@@ -34,7 +33,7 @@ export function Home() {
       <Header />
       <Container>
         <Title title='O que voce quer ler hoje?' />
-        <div className="gap-5 grid grid-cols-8 my-6">
+        <div className="gap-5 grid md:grid-cols-8 my-6 grid-cols-4">
           {genderBooks.map(book => (
             <Button title={book} variant={selectedGender.includes(book) ? 'dark' : 'light'} onClick={() => handleSelect(book)} />
           ))}
